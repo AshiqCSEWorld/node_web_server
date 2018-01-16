@@ -54,7 +54,7 @@ app.get("/", (req, res) => {
 
   res.render("home.hbs", {
     pageTitle: "Simple class routine app using express",
-    welcome: "Welcome to the world of JS"
+    welcome: "Have a nice day!"
   });
 });
 

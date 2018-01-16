@@ -1,6 +1,10 @@
-{{> header }}
+{{!-- {{> header }} --}}
 
-<p>{{screamIt welcome}}</p>
+<link rel="stylesheet" href="/style.css" type="text/css">
+
+<h1 class="title">{{pageTitle}}</h1>
+
+<div class="msg">{{screamIt welcome}} </div>
 
 <form action="/routine" , method="POST">
     <label for="day">What day it is: </label>
@@ -12,5 +16,7 @@
     </select>
     <input type="submit">
 </form>
+
+
 
 {{> footer }}

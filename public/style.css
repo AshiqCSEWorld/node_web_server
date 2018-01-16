@@ -69,3 +69,10 @@ h5 {
 .title {
   color: rgb(224, 211, 19);
 }
+
+.msg {
+  margin-bottom: 10px;
+  color: limegreen;
+  font-size: 22px;
+  font-style: italic;
+}
