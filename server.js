@@ -1,5 +1,6 @@
 const express = require("express");
 const hbs = require("hbs");
+const bodyParser = require("body-parser");
 const fs = require("fs");
 
 const port = process.env.PORT || 3000;
@@ -29,7 +30,12 @@ app.use((req, res, next) => {
 //   res.render("maintenance");
 // });
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
 
 hbs.registerHelper("getCurrentYear", () => {
   return new Date().getFullYear();
@@ -47,7 +53,7 @@ app.get("/", (req, res) => {
   // });
 
   res.render("home.hbs", {
-    pageTitle: "Some  page",
+    pageTitle: "Simple class routine app using express",
     welcome: "Welcome to the world of JS"
   });
 });
@@ -69,6 +75,53 @@ app.get("/projects", (req, res) => {
     pageTitle: "Projects page",
     wishMessage: "Ashik wants to be a JS ninja"
   });
+});
+
+app.get("/routine", (req, res) => {
+  res.render("routine.hbs", {
+    pageTitle: "Class routine",
+    message: "Welcome to our routine page"
+  });
+});
+
+app.get("/saturday", (req, res) => {
+  res.render("saturday.hbs", {
+    pageTitle: "You choose Saturday!!!"
+  });
+});
+
+app.get("/sunday", (req, res) => {
+  res.render("sunday.hbs", {
+    pageTitle: "You choose Sunday!!!"
+  });
+});
+
+app.get("/wednesday", (req, res) => {
+  res.render("wednesday.hbs", {
+    pageTitle: "You choose Wednesday!!!"
+  });
+});
+
+app.get("/thrusday", (req, res) => {
+  res.render("thrusday.hbs", {
+    pageTitle: "You choose Thrusday!!!"
+  });
+});
+
+app.post("/routine", (req, res) => {
+  var Day = req.body.day;
+  console.log(Day);
+  if (Day === "SaturdayValue") {
+    res.redirect("/saturday");
+  } else if (Day === "SundayValue") {
+    res.redirect("/sunday");
+  } else if (Day === "WednesdayValue") {
+    res.redirect("/wednesday");
+  } else if (Day === "ThrusdayValue") {
+    res.redirect("/thrusday");
+  } else {
+    res.redirect("/routine");
+  }
 });
 
 app.listen(port, () => {

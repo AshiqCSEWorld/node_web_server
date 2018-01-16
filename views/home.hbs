@@ -2,4 +2,15 @@
 
 <p>{{screamIt welcome}}</p>
 
+<form action="/routine" , method="POST">
+    <label for="day">What day it is: </label>
+    <select name="day" id="day">
+        <option value="SaturdayValue">Saturday</option>
+        <option value="SundayValue">Sunday</option>
+        <option value="WednesdayValue">Wednesday</option>
+        <option value="ThrusdayValue">Thrusday</option>
+    </select>
+    <input type="submit">
+</form>
+
 {{> footer }}

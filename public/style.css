@@ -1,0 +1,71 @@
+.total {
+  max-width: 850px;
+}
+
+.AIlab {
+  background-color: chocolate;
+  padding: 20px;
+  border: 3px solid purple;
+  font-family: monospace;
+  width: 250px;
+  height: 400px;
+  font-size: large;
+  text-align: left;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-right: 80px;
+}
+
+h3 {
+  color: azure;
+}
+
+.web {
+  background-color: chocolate;
+  padding: 20px;
+  border: 3px solid purple;
+  font-family: monospace;
+  width: 250px;
+  height: 400px;
+  font-size: large;
+  text-align: left;
+  box-sizing: border-box;
+  float: right;
+  margin-top: -330px;
+  /* margin-left: -80px; */
+  margin-right: -30px;
+  margin-top: -290px;
+}
+
+.third {
+  background-color: chocolate;
+  padding: 20px;
+  border: 3px solid purple;
+  font-family: monospace;
+  width: 250px;
+  height: 400px;
+  font-size: large;
+  text-align: left;
+  box-sizing: border-box;
+  float: right;
+  /* margin-top: -330px; */
+  margin-left: -100px;
+  margin-right: 80px;
+  margin-top: -350px;
+}
+
+h5 {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.foot {
+  margin-top: 150px;
+  background-color: darkgoldenrod;
+  font-size: 18px;
+  width: 360px;
+}
+
+.title {
+  color: rgb(224, 211, 19);
+}
