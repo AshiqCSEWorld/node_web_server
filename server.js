@@ -64,6 +64,13 @@ app.get("/bad", (req, res) => {
   });
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "Projects page",
+    wishMessage: "Ashik wants to be a JS ninja"
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
