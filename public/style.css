@@ -76,8 +76,6 @@ h5 {
   font-style: italic;
 }  */
 
-
-
 .AIlab {
   float: left;
   width: 30%;
@@ -110,17 +108,15 @@ h5 {
   text-decoration: none;
 }
 
-
 h3 {
   color: azure;
 }
 
-
 .title {
   color: goldenrod;
- }
+}
 
- .msg {
+.msg {
   margin-bottom: 10px;
   color: limegreen;
   font-size: 22px;
@@ -129,6 +125,6 @@ h3 {
 }
 
 #foot {
-  margin-top: 400px;
+  margin-top: 500px;
   background-color: darkorange;
-} 
+}
